@@ -1,0 +1,47 @@
+
+Given a column title as appears in an Excel sheet, return its corresponding column number.
+
+Example:
+
+    A -> 1
+    
+    B -> 2
+    
+    C -> 3
+    
+    ...
+    
+    Z -> 26
+    
+    AA -> 27
+    
+    AB -> 28 
+
+
+
+public class Solution 
+{
+    public int titleToNumber(String A)
+    {
+        int length=A.length();
+      int sum=0;
+        HashMap<Character,Integer> map=new  HashMap<Character,Integer> ();
+        Character c='A';
+        char[] a=A.toCharArray();
+        for(int i=1;i<27;i++)
+        {
+            map.put(c,i);
+            c++;
+        }
+        //int sum=0;
+        int j=0;
+        for(int i=length-1;i>=0;i--)
+        {
+           sum=sum+(int)Math.pow(26,j)*map.get(a[i]); 
+           j++;
+        }
+          return sum; 
+    }
+    }
+
+
