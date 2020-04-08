@@ -1,7 +1,7 @@
 #InterviewBit
 
 
- Problems        |   Solution
---------------------- | ------------------
-[Excel column number](https://www.interviewbit.com/problems/excel-column-number/) | [base]
-Content in the first column | Content in the second column
+S.No |  Problems              |     Solution
+-----|------------------------| --------------------------------------------------------------------------
+1 |[Excel column number](https://www.interviewbit.com/problems/excel-column-number/) | [base](https://github.com/thakurshilpa/InterviewBit/blob/master/solution/Excel_Column_number)
+
